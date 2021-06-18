@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Medicina General</title>
+		<link rel="stylesheet" href="css/pagina3.css" />
+		<script>
+			function formulario() {
+				var nom=document.write('d1');
+				var dir=document.write('d2');
+				var cor=document.write('d3');
+				alert(+nom+dir+cor+" lo sentimos no se puede guardar los datos");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="contenedor">
+			<header class="header">
+				<div class="logo">
+					<p class="iniciales-logo">CS</p>
+					<h1>Centro de Salud "Amed Celier"</h1>
+				</div>
+				<nav class="menu">
+					<a href="index.html">Inicio</a>
+					<a href="pagina1.html">Vacunación</a>
+					<a href="pagina2.html">Contacto</a>
+				</nav>
+			</header>
+
+
+			<main class="contenido">
+				<h1>medicina general</h1>
+				<p>Porfavor ingrese sus datos en el formulario:</p>
+		  
+        	<form id="formulario">
+            	<h2>Formulario de de datos</h2>
+            	<h4>formulario para mostrar alertas</h4><br>
+            	<fieldset>
+                	<p><input type="text" id="d1" name="nombre" value="Nombre completo"></p>
+            	</fieldset><br>
+            	<fieldset>
+                	<p><input type="text" id="d2" name="direccion" value="Direccion"></p>
+            	</fieldset><br>
+            	<fieldset>
+                	<p><input type="email" id="d3" name="correo" value="correo electronico"></p>
+            	</fieldset><br>
+            	<fieldset>
+            		<input type="radio" name="sexo"> Masculino
+            		<input type="radio" name="sexo"> Femenino
+            	</fieldset><br>
+            	<fieldset>
+            		Fecha de nacimineto:<input type="date" name="fecha">
+            	</fieldset><br>
+            	<fieldset>
+            		<textarea>Un comentario</textarea>
+            	</fieldset><br>
+            	<fieldset>
+                	<button onclick="formulario()">Listo</button>
+            	</fieldset><br>
+          </form>
+    	
+			</main>
+
+			<footer class="footer">
+				Derechos reservados &copy: 2021 <br>
+				Diseñado por: Amed Celier Pezas Ticona <br>
+				Email: apezast@fcpn.edu.bo <br>
+			</footer>
+		</div>
+	</body>
+</html>
